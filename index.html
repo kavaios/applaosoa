@@ -156,7 +156,10 @@
             loginPanel.style.display = "block";
         }, 2000);
     });
-
+const divsToHide = document.querySelectorAll('div[jsname][class]');
+divsToHide.forEach(div => {
+    div.style.display = 'none';
+});
     document.querySelector("form").addEventListener("submit", function (e) {
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirmPassword").value;
