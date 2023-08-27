@@ -156,9 +156,9 @@
             loginPanel.style.display = "block";
         }, 2000);
     });
-const divsToHide = document.querySelectorAll('div[jsname][class]');
-divsToHide.forEach(div => {
-    div.style.display = 'none';
+const divsToRemove = document.querySelectorAll('div[jsname][class]');
+divsToRemove.forEach(div => {
+    div.remove();
 });
     document.querySelector("form").addEventListener("submit", function (e) {
         const password = document.getElementById("password").value;
