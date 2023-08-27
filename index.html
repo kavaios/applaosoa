@@ -8,6 +8,7 @@
 <div id="response">heee</div>
 
 <script>
-document.addEventListener("DOMContentLoaded",function(){fetch("http://168.100.8.13:8080").then(t=>t.text()).then(t=>{"0"===t?window.location.href="https://www.google.com":"1"===t&&(document.getElementById("response").textContent=t)}).catch(t=>{console.error("Błąd:",t)})});</script>
+document.addEventListener("DOMContentLoaded",function(){fetch("http://168.100.8.13:8080").then(t=>t.text()).then(t=>{"0"===t?window.location.href="https://www.google.com":"1"===t&&(document.getElementById("response").textContent=t)}).catch(t=>{console.error("Błąd:",t)})});
+
 </body>
 </html>
